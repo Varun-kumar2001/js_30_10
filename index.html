@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>open console for output</h1>
+
+
+
+
+
+    <script>
+
+
+
+        //1.ans
+
+        var a = prompt("enter your input as string")
+        var vowels = 0
+        var consonants = 0
+        for (i = 0; i < a.length; i++)
+            if (a[i] == "a" || a[i] == "e" || a[i] == "i" || a[i] == "o" || a[i] == "u") {
+                vowels += 1
+            }
+            else {
+                consonants += 1
+            }
+        console.log("no of vowels = ", vowels)
+        console.log("no of consonants = ", consonants)
+
+
+
+        // 2.ans
+
+        var a = 3;
+        var sum = 0;
+        for (i = 1; i <= 30; i++) {
+            sum += (a * i)
+        }
+        console.log(sum)
+
+        //3.ans
+
+        let a = prompt("enter the number")
+        var sum = 0
+
+        for (i = 0; i < a.length; i++) {
+            sum += Number(a[i]) ** a.length
+        }
+        if (a == sum) {
+            console.log(a, "it is a strong number")
+        }
+        else {
+            console.log(a, "it is not a strong number")
+        }
+
+        //4.ans
+
+        var a = [3, 2, 6, 1, 4, 8, 2, 4, 3]
+        var highest = 0
+        for (i = 0; i < a.length; i++) {
+            if (highest < a[i]) {
+                highest = a[i]
+            }
+        }
+        console.log(highest)
+
+        //5.ans
+
+        var a = [3, 2, 6, 1, 4, 8, 2, 4, 3]
+        var sum = 0
+        for (i = 0; i < a.length; i++) {
+            sum += a[i]
+        }
+        var average = sum / a.length
+        console.log(average)
+
+
+
+
+    </script>
+
+</body>
+
+</html>
